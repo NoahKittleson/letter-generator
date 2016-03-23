@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/letter.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
+    <script src="js/letter.js"></script>
+    <title>Letter Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fill in the blanks</h1>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="street">Street</label>
+            <input id="street" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input id="city" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input id="state" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="zip-code">Zip-Code</label>
+            <input id="zip-code" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="recipient">Recipient</label>
+            <input id="recipient" class="form-control" type="text">
+          </div>
+
+
+          <button type="submit" class="btn">Show the story</button>
+        </form>
+      </div>
+      <div id="letter">
+        <div align="right">
+          <p><span class="street"></span></p>
+          <p><span class="city"></span>, <span class="state"></span>, <span class="zip-code"></span></p>
+        </div>
+          <p>Dear <span class="recipient"></span>:</p>
+          <p>HERE IS THE TEXT...</p>
+          <p>Sincerely,</p>
+          <p><span class="name"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
